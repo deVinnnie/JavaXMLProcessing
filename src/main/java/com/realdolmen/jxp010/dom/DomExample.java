@@ -30,6 +30,18 @@ public class DomExample {
         }
     }
 
+    /**
+     * Add description and score nodes to each movie element.
+     * Score is generated randomly and is a value between 0 and 5.
+     * Description is set to 'Description of this movie'.
+     *
+     * The result is written back to disk in src/main/resources/movies-dom-edit.xml
+     *
+     * @throws ParserConfigurationException
+     * @throws IOException
+     * @throws SAXException
+     * @throws TransformerException
+     */
     public void doDom() throws ParserConfigurationException, IOException, SAXException, TransformerException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -40,6 +52,10 @@ public class DomExample {
         for(int i = 0; i < movieList.getLength(); i++){
             Node node = movieList.item(i);
 
+            // 1. Create Element
+            // 2. Create TextNode for element
+            // 3. Add TextNode to Element.
+            // 4. Add Element to MovieNode.
             Element description = document.createElement("description");
             Node descriptionText = document.createTextNode("Description of this movie");
             description.appendChild(descriptionText);
