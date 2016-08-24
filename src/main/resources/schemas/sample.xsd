@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com/realdolmen/jxp010/jaxb/domain" xmlns:tns="http://com/realdolmen/jxp010/jaxb/domain" elementFormDefault="qualified">
+<element name="Sample">
+	<complexType>
+		<sequence>
+			<element name="sample" type="string"/>
+		</sequence>
+	</complexType>
+</element>
+</schema>
