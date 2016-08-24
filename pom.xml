@@ -25,8 +25,8 @@
 		<version.junit>4.11</version.junit>
 		<version.war.plugin>2.4</version.war.plugin>
 		<version.surefire.plugin>2.10</version.surefire.plugin>
-		<maven.compiler.target>1.7</maven.compiler.target>
-		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
 		<version.jboss.maven.plugin>7.4.Final</version.jboss.maven.plugin>
 	</properties>
 
