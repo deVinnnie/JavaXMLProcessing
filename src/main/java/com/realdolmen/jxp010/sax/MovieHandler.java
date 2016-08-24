@@ -4,6 +4,11 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+/**
+ * A simple SAX XML Handler which prints
+ * a the title for each movie and shows
+ * the total number of movie elements in the XML-file.
+ */
 public class MovieHandler extends DefaultHandler {
 
     private boolean movieFlag = false;
@@ -14,6 +19,7 @@ public class MovieHandler extends DefaultHandler {
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+        // When setXML
         if(localName.equals("movie")){
             movieFlag = true;
             nMovies++;

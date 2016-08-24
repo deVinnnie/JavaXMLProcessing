@@ -8,18 +8,16 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 
 /**
- * Created by VCLBB37 on 24/08/2016.
+ * Loads movies.xml and applies the MovieHandler to the XML.
+ *
  */
 public class SaxExample {
 
-
-    //psvm
+    // Shortcut to generate main method in Intellij -> psvm + TAB
     public static void main(String[] args) {
         SaxExample example = new SaxExample();
         example.doSax();
     }
-
-
 
     public void doSax(){
         XMLReader parser;
@@ -38,7 +36,5 @@ public class SaxExample {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
