@@ -1,11 +1,8 @@
 package com.realdolmen.jxp010.stax;
 
-
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.XMLEvent;
 import java.io.File;
 import java.io.FileInputStream;
